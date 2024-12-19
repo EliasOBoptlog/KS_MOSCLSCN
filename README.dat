@@ -1,0 +1,56 @@
+The structure of the files is as follows: 
+
+#Coord Suppliers	
+#Coord Manufacturers	
+#Coord Warehouse	
+#Coord Hybrids	
+#Coord Retailers	
+#Coord Urban center
+	
+#Parameters
+
+param I;	#Raw material
+param S;	#Supplier
+param M;	#Manufacturer
+param H;	#Hybrid
+param W;	#Warehouse
+param C;	#Retailer
+param P;	#Products
+param T;	#Time period
+param TV;	#Type of vehicle
+param SZ;	#Size of vehicle
+param UC;	#Urban centers
+param CI_im	#Inventory holding cost/unit of raw material i at manufacturer m
+param CI_pw	#Inventory holding cost/unit of product p at depot w
+param CP_pm	#Production cost of product p at manufacturer m
+param CT_ism	#Cost of raw material i per unit from supplier s to manufacturer m
+param CT_wc	#Cost of transportation/unit weight from depot w to retailer c1 
+param DEM_pct	#Demand of product 1 at retailer c at time period t
+param FCW_w	#Fixed operating cost for depot w
+param OFF_ip	#Off take of raw material i for product p
+param PS_m	#Storage capacity at manufacturer m
+param PS_w	#Storage capacity at depot w
+param PS_h	#Storage capacity in hybrid facility h
+param W_p	#Weight of product p
+param B_p	#Disposal rate of product p (rand [0,1])
+param CI_ph	#Inventory holding cost per unit of product p at hybrid facility h
+param CT_mw	#Cost of transportation/unit weight from manufacturer m to depot w
+param CT_hc	#Cost of transportation/unit weight from hybrid facility h, to retailer c
+param CT_ch	#Cost of transportation/unit weight from retailer c to hybrid facility h
+param CT_hm	#Cost of transportation/unit weight from hybrid facility h to manufacturer m 
+param CT_mh	#Cost of transportation/unit weight from manufacturer m to hybrid facility h 
+param D_uh	#Distance from urban center u to hybrid facility h 
+param Surrounding	#Surrounding distance of obnoxious facility
+param Pop_u	#Population per urban center u
+param CR_pm	#Cost of recycled/reprocessed per unit of product p in manufacturer m
+param FCH_h	#Operating fixed cost for hybrid facility h
+param FCM_m	#Fixed cost for opening manufacturing plant m
+param A_pct	#Return rate of product p available in retailer c at time period t (rand [0,1])
+param SL	#Service level of inventory	 
+param SDS_p	#Sales standar deviation of product p 
+param L_p:=	#Average lead time for product p at retailers
+param CM_pm:=	#manufacturing capacity limit
+param Mbig:=	#Big M
+param CO_vk	#Cost of CO2 emission per vehicle type v with size k
+param VC_vk	#Cost per vehicle type v with size k
+param VQ_vk	#Capacity per vehicle type v with size k
